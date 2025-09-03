@@ -1,96 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paper & Things House</title>
-  <meta name="description" content="Loja de papelaria e mais — Paper & Things House" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="styles.css" />
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paper &amp; Things House</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-merriweather {
+            font-family: 'Merriweather', serif;
+        }
+        .bg-beige {
+            background-color: #F5F5DC;
+        }
+        .bg-dark-brown {
+            background-color: #5D4037;
+        }
+        .text-dark-brown {
+            color: #5D4037;
+        }
+        .text-gold {
+            color: #D4AF37;
+        }
+        .border-gold {
+            border-color: #D4AF37;
+        }
+    </style>
 </head>
-<body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a href="#" class="brand">
-        <img src="assets/logo.png" alt="Paper & Things House" class="brand__logo" />
-        <div class="brand__name">
-          <span class="brand__title">PAPER & THINGS</span>
-          <span class="brand__subtitle">HOUSE</span>
-        </div>
-      </a>
-      <form class="search" role="search" aria-label="Buscar produtos">
-        <input type="search" placeholder="Buscar produtos, marcas e categorias" aria-label="Buscar" />
-        <button type="submit" aria-label="Enviar busca">🔍</button>
-      </form>
-      <nav class="actions" aria-label="Ações">
-        <a href="#" class="action">Entrar</a>
-        <a href="#" class="action">Favoritos</a>
-        <a href="#" class="action action--primary">Carrinho (0)</a>
-      </nav>
-      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    </div>
-    <nav class="menu" aria-label="Categorias">
-      <div class="container menu__inner">
-        <a href="#" class="menu__item">Novidades</a>
-        <a href="#" class="menu__item">Cadernos</a>
-        <a href="#" class="menu__item">Escrita</a>
-        <a href="#" class="menu__item">Organização</a>
-        <a href="#" class="menu__item">Arte & DIY</a>
-        <a href="#" class="menu__item">Promoções</a>
-      </div>
-    </nav>
-  </header>
+<body class="bg-beige">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<img alt="Paper &amp; Things House Logo" class="h-16 mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp9obs9l2hJMdFdckp855BXHwl6IrsXDFCyat2-xPVhLxOp8jsmOIHPEj5krcURyQ2HIYOjedao8JH59w9uiIsIahTYGnsWKtxadlh0QB0HzQScSo1Uj9vIERPSHnFPmgYxg-1PAvnpMY9PAIqOKk-1jUH-E5vO2et1bFxSwRV2-yw8A9_7apGBp_rf0wdK26l5e6KhDPATZvtF0qmhIqk8-QLk2JW9-Ex9Sn-WR54HZNkfJLUpYJqFlPZm0DAc18KSI6e3HEcbAs"/>
+</div>
+<div class="hidden md:flex flex-1 justify-center">
+<div class="relative w-full max-w-lg">
+<input class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gold" placeholder="O que você está procurando?" type="text"/>
+<button class="absolute right-0 top-0 mt-2 mr-4">
+<span class="material-icons text-gray-500">search</span>
+</button>
+</div>
+</div>
+<div class="flex items-center space-x-6">
+<a class="text-dark-brown hover:text-gold flex items-center" href="#">
+<span class="material-icons mr-1">person</span>
+                    Minha Conta
+                </a>
+<a class="text-dark-brown hover:text-gold flex items-center" href="#">
+<span class="material-icons mr-1">shopping_cart</span>
+                    Carrinho
+                </a>
+</div>
+</div>
+<nav class="bg-dark-brown text-white">
+<div class="container mx-auto px-4 py-2 flex justify-center space-x-8">
+<a class="hover:text-gold" href="#">Papelaria</a>
+<a class="hover:text-gold" href="#">Escritório</a>
+<a class="hover:text-gold" href="#">Agendas</a>
+<a class="hover:text-gold" href="#">Cadernos</a>
+<a class="hover:text-gold" href="#">Presentes</a>
+<a class="hover:text-gold" href="#">Promoções</a>
+</div>
+</nav>
+</header>
+<main class="container mx-auto px-4 py-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+<img alt="Promotional banner" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2SmOUqmUMHieOPAJPTVvqHBaA7-16tAgeCVbA0J-15gT3xM5Lg1lnUbEUvSmL3A133tRdlomrZvTQx9z6ccorcfq0zD7-MnU4MjYMW24XIaDHpwAOBxse-HuFO63ULxVr0lf5Jp4Uk8zRPfDBm7rqhVRairiExnMU98c-WFpyrqk6mCTvrWP0EEi883FV8wJLLZt8qnqVzNPBo9dU8nwSZmOH1Xnzkh57h-VOn3wbPOC6po2KjJJMW30v2-5YK-Q_IyeXEMkhC3o"/>
+</div>
+<section class="mb-12">
+<h2 class="font-merriweather text-3xl text-dark-brown text-center mb-8">Categorias em Destaque</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="text-center group">
+<div class="bg-white rounded-full p-4 border-2 border-transparent group-hover:border-gold transition duration-300">
+<img alt="Canetas e Marcadores" class="w-24 h-24 mx-auto rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs2Yp8WU23DzsUdkHWMKb69Cbnw8AUQPmIMnC86zqsmBcJprqnCm0csqz3V6ZGdOZfWABNbVQLpP4QwTC5kSkqif2stq5mcyHB7wiTynjUZ5uVzxkJFFXiJ82ErcWsEgCIs4PpWsRNmScYjBq_hlcn_lwFzyI36l699jloVMIxWR3Q40gMUF2x-oG4DCbDBvpU-WjsGB8GqrisdQrSJwWa5wELQAYCGc1bQ-2Hk8zZGZSN7PDHEjpuLX3hHwZGAjaoYABZMJ-cRbs"/>
+</div>
+<p class="mt-4 text-dark-brown font-semibold">Canetas e Marcadores</p>
+</div>
+<div class="text-center group">
+<div class="bg-white rounded-full p-4 border-2 border-transparent group-hover:border-gold transition duration-300">
+<img alt="Cadernos e Fichários" class="w-24 h-24 mx-auto rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHcX_8PBn9WIyrIWFYxqcFT2-vo1WXeUOmdhSjgWr5lVvWmIDwYM3B3HJejH0LTSMWfVk4SW8d0QR70wxeUgxh70MxWmVKoPWr0ru9emuurBG4LYa02MhP3AcDnWaKUBLubJy-v_pt3IX6uT_bohpLmjzXg2tjkNkWwl3xRbzKdIksf9B_5IqoxKvW64WTyebSrIlNuoCA7GlSxK-JaGwx2TlQYlDvbVp6Lu5pDd7lZG-RD-Uykr6k32JYIKYOPU6hYfykY5gMHRE"/>
+</div>
+<p class="mt-4 text-dark-brown font-semibold">Cadernos e Fichários</p>
+</div>
+<div class="text-center group">
+<div class="bg-white rounded-full p-4 border-2 border-transparent group-hover:border-gold transition duration-300">
+<img alt="Agendas e Planners" class="w-24 h-24 mx-auto rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Edz5w3FdRsWQtNpoyLdv-IQig7GvlSMXkkIdBn7XESbfNoM83ZDW5H04yO5AWKhLJGm_5Z02fzMCVfq1UI9-A5_dzsVWzVpko2xcDV5kl7L3Os1DU8uBTiouCh2-Y0vJs8Eew4BPl6H6Xivaywxmeo-t_mArTU8iVCbAxIvMVaoNywGcJcgG1q7p1_RWxEIDJdifuYORAs7ehhJ0vCAuv0KZGIEhAdcMsRIAmTj3UbBRjAo9l19wMy7EWAUYDmMbXbXyR2Qb1gc"/>
+</div>
+<p class="mt-4 text-dark-brown font-semibold">Agendas e Planners</p>
+</div>
+<div class="text-center group">
+<div class="bg-white rounded-full p-4 border-2 border-transparent group-hover:border-gold transition duration-300">
+<img alt="Mochilas e Estojos" class="w-24 h-24 mx-auto rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvY7sC4FBxexr97h5MEUU4XMq0c4QCzjPLTmEyM10FMExQhJeN5PRZzLKguh0PqNiIgeiBiWJ0PXgS25PvPxenZgXMKzI1PdjbNAWH_n3NgFlTTC-9BKJ0SnKJei1bZSyw--Wj3GTjzyGhcowSODFI1q98QUI_22_kUXl8ViVpL_kjeH_CRnniFQl81M_DLF7TdF07trm8j6yMgskYisn6NieYD3kXleL3Ex21u7KtByVji1VLqflEmWFgqAjoQ_PUgNTPULaSocw"/>
+</div>
+<p class="mt-4 text-dark-brown font-semibold">Mochilas e Estojos</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="font-merriweather text-3xl text-dark-brown text-center mb-8">Nossos Produtos</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<img alt="Product 1" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpKT-xRFaB85ShwFB1yB1EQ3chp__EXXR9WhH8qF1yW0rxtwLrQQ_ZxYdul6JnYOHE5uosPr3GSdj0nCf8SaRnI6OMWd59w4amDwBMdrHtflYfrWU1ir9vunEZX9HaZW151GcQdGyMjl_lG8aK6ZPjBOUcH907XRuiUFVhBlHPnsfQqb3226TkQljMt5qLbH65TfQnkzPNQx3PXaPEYQsiwk2mS3IoiZ8m_o10FkXKFIeNqOJ9iLHI5ok754JjASXyo3-0tuZs6bI"/>
+<div class="p-4">
+<h3 class="font-semibold text-dark-brown text-lg">Caderno Clássico</h3>
+<p class="text-gray-600 mt-1">Capa dura, 90g</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-xl font-bold text-dark-brown">R$ 45,90</span>
+<button class="bg-dark-brown text-white px-4 py-2 rounded-full hover:bg-gold transition duration-300">Comprar</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<img alt="Product 2" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr2UvLMAipjEsntLN_MSflGltKpwnZyjb7WdPzbaRy3mbOs59s7E83JSuhqOUrc25eHlTSoXtI25nuG3xtPow4Z4idnIwzgznXn5T653lZ9ux_9uq6lTf5DH43cLIwelgiNMiyDHCn3A3TQp48l5h_hmzWnpJvfFxNfpSiTVXpPY3abOY9XdqgHTloY4lslDMiQGPoKGFDrTY0IX-S8_0sn44W19QUE8jVPJT57Z3bkeoWrEw6EJmu5LgTI5s2O1YhTICsTJ7loSE"/>
+<div class="p-4">
+<h3 class="font-semibold text-dark-brown text-lg">Kit Canetas Pena</h3>
+<p class="text-gray-600 mt-1">Conjunto com 5 cores</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-xl font-bold text-dark-brown">R$ 89,90</span>
+<button class="bg-dark-brown text-white px-4 py-2 rounded-full hover:bg-gold transition duration-300">Comprar</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<img alt="Product 3" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN9fEF--fMHKO-WNxAJRIpRtmAZwHSeEkvlDZ01r9rrQ4H285Md0civVKakmj6YzQfKcpYYod-c1MfzwHNfsrweZqrxqjev9_3XFPG8e2zf1uTJBDzycfhRQazVy9J2DJUuM7Wx5Bk5p2TVkOtksmxVmFis8j2vLe1RE42hMvELfOLC7luVe1UOlPVJwmtvW8dn2rejJHJwL3kaWADWdHv1-TSpGiZ8YnL8bw1MCL5b8DUzL2R4QY8um9D7tY63dJyMPDsB64wvmM"/>
+<div class="p-4">
+<h3 class="font-semibold text-dark-brown text-lg">Agenda Planner 2024</h3>
+<p class="text-gray-600 mt-1">Visão semanal e mensal</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-xl font-bold text-dark-brown">R$ 75,00</span>
+<button class="bg-dark-brown text-white px-4 py-2 rounded-full hover:bg-gold transition duration-300">Comprar</button>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<img alt="Product 4" class="w-full h-56 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc85u7zezx6qmaLm44_mrL4FFrigYw4UtFTY7HIzjCwTx7E9NxfxnuWOyZvi4M-uPcJ4lAIftbPtBgyg2CSxGy1TElQv5PUmIUL5j_ayWjvylCS9-JGu8NwQkWrywcbk936N1hDvRU0aEGiWzmE2DrF1gZuXfoTeU0lB2LTuunoB2ms_NqkXdsaeX6TjznkgPjDy4J46jIvcErj27ft50dTk2uYR9dgnNAAPpm_s3_QbXAV3Kw6K1ujJf4o3D7rKHPlmzQCpUOJsI"/>
+<div class="p-4">
+<h3 class="font-semibold text-dark-brown text-lg">Bloco de Notas Adesivo</h3>
+<p class="text-gray-600 mt-1">Formato casa</p>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-xl font-bold text-dark-brown">R$ 15,50</span>
+<button class="bg-dark-brown text-white px-4 py-2 rounded-full hover:bg-gold transition duration-300">Comprar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-dark-brown text-white mt-12">
+<div class="container mx-auto px-4 py-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="font-merriweather text-xl mb-4">Paper &amp; Things House</h3>
+<p class="text-gray-300">Sua papelaria online com os melhores produtos para sua casa e escritório.</p>
+</div>
+<div>
+<h3 class="font-semibold text-lg mb-4">Institucional</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-300 hover:text-gold" href="#">Sobre Nós</a></li>
+<li><a class="text-gray-300 hover:text-gold" href="#">Políticas de Privacidade</a></li>
+<li><a class="text-gray-300 hover:text-gold" href="#">Termos de Uso</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-lg mb-4">Atendimento</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-300 hover:text-gold" href="#">Fale Conosco</a></li>
+<li><a class="text-gray-300 hover:text-gold" href="#">Trocas e Devoluções</a></li>
+<li><a class="text-gray-300 hover:text-gold" href="#">Perguntas Frequentes</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-lg mb-4">Siga-nos</h3>
+<div class="flex space-x-4">
+<a class="text-gray-300 hover:text-gold" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg></a>
+<a class="text-gray-300 hover:text-gold" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+<a class="text-gray-300 hover:text-gold" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.741.01-3.701.057-.945.045-1.524.207-1.956.372-.518.2-.897.47-1.293.865-.395.395-.665.774-.865 1.293-.165.432-.327 1.011-.372 1.956-.047.96-.057 1.299-.057 3.701s.01 2.741.057 3.701c.045.945.207 1.524.372 1.956.2.518.47.897.865 1.293.395.395.774.665 1.293.865.432.165 1.011.327 1.956.372.96.047 1.299.057 3.701.057s2.741-.01 3.701-.057c.945-.045 1.524-.207 1.956-.372.518-.2.897-.47 1.293-.865.395-.395.665-.774.865-1.293.165-.432.327-1.011-.372-1.956.047-.96.057-1.299.057-3.701s-.01-2.741-.057-3.701c-.045-.945-.207-1.524-.372-1.956-.2-.518-.47-.897-.865-1.293-.395-.395-.774-.665-1.293-.865-.432-.165-1.011-.327-1.956-.372-.96-.047-1.299-.057-3.701-.057zM12 7.111c-2.76 0-4.999 2.24-4.999 4.999s2.239 4.999 4.999 4.999 4.999-2.24 4.999-4.999S14.76 7.111 12 7.111zm0 8.162c-1.745 0-3.162-1.417-3.162-3.162s1.417-3.162 3.162-3.162 3.162 1.417 3.162 3.162-1.417 3.162-3.162 3.162zm4.805-7.726a1.182 1.182 0 100-2.364 1.182 1.182 0 000 2.364z" fill-rule="evenodd"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+<p>© 2024 Paper &amp; Things House. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
 
-  <main>
-    <section class="hero">
-      <div class="carousel" data-carousel>
-        <div class="carousel__track">
-          <div class="carousel__slide is-active"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjVlZmU2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhZDljNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwMCwyMDApIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8dGV4dCB5PSItMTAiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMyYjFlMTYiPlBhcGVyICYgVGhpbmdzIEhvdXNlPC90ZXh0PgogICAgPHRleHQgeT0iMjYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM4YTZkM2IiPlN1YSB2aXRyaW5lIGFxdWk8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" alt="Banner 1" /></div>
-          <div class="carousel__slide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjVlZmU2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhZDljNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwMCwyMDApIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8dGV4dCB5PSItMTAiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMyYjFlMTYiPlBhcGVyICYgVGhpbmdzIEhvdXNlPC90ZXh0PgogICAgPHRleHQgeT0iMjYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM4YTZkM2IiPlN1YSB2aXRyaW5lIGFxdWk8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" alt="Banner 2" /></div>
-          <div class="carousel__slide"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjVlZmU2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhZDljNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwMCwyMDApIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICA8dGV4dCB5PSItMTAiIGZvbnQtc2l6ZT0iMjgiIGZpbGw9IiMyYjFlMTYiPlBhcGVyICYgVGhpbmdzIEhvdXNlPC90ZXh0PgogICAgPHRleHQgeT0iMjYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM4YTZkM2IiPlN1YSB2aXRyaW5lIGFxdWk8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" alt="Banner 3" /></div>
-        </div>
-        <button class="carousel__btn prev">‹</button>
-        <button class="carousel__btn next">›</button>
-        <div class="carousel__dots"></div>
-      </div>
-    </section>
-
-    <section class="info-stripe">
-      <div class="container info-grid">
-        <div class="info-item">🚚 <span>Frete grátis acima de R$199</span></div>
-        <div class="info-item">💳 <span>Até 10x sem juros</span></div>
-        <div class="info-item">🔒 <span>Checkout seguro</span></div>
-      </div>
-    </section>
-
-    <section class="section container">
-      <header class="section__header">
-        <h2 class="section__title">Destaques</h2>
-        <a href="#" class="section__cta">Ver tudo →</a>
-      </header>
-      <div class="products">
-        <article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 1</h3><p>R$ 39.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 2</h3><p>R$ 42.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 3</h3><p>R$ 45.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 4</h3><p>R$ 48.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 5</h3><p>R$ 51.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 6</h3><p>R$ 54.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 7</h3><p>R$ 57.90</p></div></article><article class="card"><div class="thumb"></div><div class="card__body"><h3>Produto 8</h3><p>R$ 60.90</p></div></article>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container newsletter">
-        <h2>Assine nossa newsletter</h2>
-        <form><input type="email" placeholder="Seu e-mail" required /><button type="submit">Enviar</button></form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <img src="assets/logo.png" alt="Logo" class="footer__logo"/>
-      <p>© 2025 Paper & Things House — Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+</body></html>
